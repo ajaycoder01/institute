@@ -27,10 +27,12 @@ export default function ContactSection() {
     reset,
   } = useForm();
 
+  const backendUrl = "https://institute-backend-5mp2.onrender.com"
+
   // Step 1: request OTP
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:5000/api/contact/request-otp", {
+      await axios.post(`${backendUrl}/api/contact/request-otp`, {
         email: data.email,
       });
 
@@ -60,7 +62,7 @@ export default function ContactSection() {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/contact/submit", {
+      await axios.post(`${backendUrl}/api/contact/submit`, {
         ...formData,
         otp,
       });
