@@ -9,6 +9,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+const PORT = process.env.PORT || 5000;
 
 // Rate limiter for OTP
 const otpLimiter = rateLimit({
@@ -26,6 +27,6 @@ app.get('/',(req,res)=>{
 
 
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log("Server running on port 5000");
 });
