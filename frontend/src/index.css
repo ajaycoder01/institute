@@ -1,49 +1,44 @@
+/* Tailwind must be first */
 @import "tailwindcss";
 
+/* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&display=swap');
-
+/* Your custom styles */
 .input {
   width: 100%;
 }
 
-
-/* Apply smooth scrolling and top padding */
+/* Smooth scrolling and padding */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 120px; /* For fixed headers */
+  scroll-padding-top: 120px;
 }
+
+/* Body fonts */
 body ul li {
   font-family: "Ubuntu", sans-serif !important;
 }
-body p{
-   font-family: "Inter", sans-serif;
+body p {
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   letter-spacing: 0.6px;
 }
-
-
-body h1,h2,h3,h4,h5, span{
+body h1,h2,h3,h4,h5, span {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-/* adjust scroll padding for smaller screens */
+/* Responsive scroll padding */
 @media (max-width: 768px) {
-  html {
-    scroll-padding-top: 70px; /* smaller padding for tablets/mobiles */
-  }
+  html { scroll-padding-top: 70px; }
 }
-
 @media (max-width: 480px) {
-  html {
-    scroll-padding-top: 50px; /* even smaller for small phones */
-  }
+  html { scroll-padding-top: 50px; }
 }
 
-/* Fixed navbar ke liye offset */
+/* Fixed navbar offset */
 section, div[ref] {
   scroll-margin-top: 150px;
 }
