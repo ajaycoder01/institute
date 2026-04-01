@@ -2,7 +2,7 @@ import { HiPhone } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 export default function CallButton() {
-  const phoneNumber = "+911234567890"; // replace with your number
+  const phoneNumber = "+918080880014"; // replace with your number
 
   return (
     <div className="fixed bottom-22 md:bottom-26  right-6 md:right-8 z-50">
